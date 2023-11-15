@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Security Questionnaire</h2>
+    <div id="formSection">
+        <div class="question-section">
+            <label>For Network Layer:</label>
+            <ul>
+                <li><input type="checkbox" value="10"> Is there any virus scanning at the network layer?</li>
+                <li><input type="checkbox" value="10"> Are the patches up to date on appropriate devices?</li>
+                <li><input type="checkbox" value="5"> Is online and mobile delivery services (products) discouraged?
+                </li>
+                <li><input type="checkbox" value="5"> Are there less open or unused ports on the server?</li>
+                <li><input type="checkbox" value="5"> Is port 1433 encrypted?</li>
+                <li><input type="checkbox" value="5"> Is the https connection proxied (to identify secure and insecure
+                    connections).</li>
+                <li><input type="checkbox" value="10"> Does the security control at the network layer react (prevent or
+                    detect) to untrusted data items.</li>
+                <li><input type="checkbox" value="10"> Is non-repudiation enforced to ensure proper system
+                    accountability?</li>
+                <li><input type="checkbox" value="10"> Is there any authentication system for privileged access?</li>
+                <li><input type="checkbox" value="10"> Does the ssh react (block) to packets with unauthorized IP
+                    addresses?</li>
+            </ul>
+        </div>
+
+        <div class="question-section">
+            <label>For Application Layer:</label>
+            <ul>
+                <li><input type="checkbox" value="10"> Does the web server validate inputs?</li>
+                <li><input type="checkbox" value="10"> Does the application server validate inputs?</li>
+                <li><input type="checkbox" value="5"> Is there any authentication mechanism between the SQL server and
+                    the
+                    database server?</li>
+                <li><input type="checkbox" value="5"> Do the servers (development and test servers) placed on the
+                    internet forgotten?</li>
+                <li><input type="checkbox" value="5"> Are the application and operating system up to date?</li>
+                <li><input type="checkbox" value="5"> Are the firewall and the enterprise switch patches up to date?
+                </li>
+                <li><input type="checkbox" value="5"> Is the patch management on the web server?</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="formSection">
+        <table>
+            <thead>
+                <tr>
+                    <th>Attack Surface (Access Points)</th>
+                    <th>Threat Scenario</th>
+                    <th>Event Identification</th>
+                    <th>Threat Quantification</th>
+                    <th>Very Likely</th>
+                    <th>Likely</th>
+                    <th>Somehow Likely</th>
+                    <th>Not Likely</th>
+                    <th>No Chance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- The Network Layer questions -->
+                <tr>
+                    <td rowspan="10">The Network Layer</td>
+                    <td>i) Is there any virus scanning at the network layer?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <!-- Repeat similar rows for other network layer questions -->
+                <tr>
+                    <td>i) Are the patches up to date on appropriate devices?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                Is the https connection proxied (to identify secure and insecure connections).</td>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Does the security control at the network layer react (prevent or detect) to untrusted data items.</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Is non-repudiation enforced to ensure proper system accountability?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Is there any authentication system for privileged access?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Does the ssh react (block) to packets with unauthorized IP addresses?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                
+                <!-- The Application Layer questions -->
+                <tr>
+                    <td rowspan="7">Application Layer</td>
+                    <td>i) Does the web server validate inputs?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Does the application server validate inputs?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Is there any authentication mechanism between the SQL server and the database server?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Do the servers (development and test servers) placed on the internet forgotten?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Are the application and operating system up to date?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Are the firewall and the enterprise switch patches up to date?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>i) Is the patch management on the web server?</td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                </tbody>
+                </table>
+                
+                <label>Enter URL:</label>
+                <input type="url" id="urlInput" placeholder="https://example.com">
+                
+                <button type="button" onclick="submitForm()">Submit</button>
+                </div>
+                
+
+
+<script>
+    function submitForm() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var urlInput = document.getElementById('urlInput').value;
+
+        var risk = 0;
+
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+                risk += 10; // Assuming each checked checkbox contributes 10 to the risk
+            }
+        });
+
+        // Display the results in the table
+        displayResults(checkboxes, risk);
+    }
+
+    function displayResults(checkboxes, risk) {
+        var table = document.querySelector('table');
+        var tbody = document.createElement('tbody');
+
+        checkboxes.forEach(function (checkbox) {
+            var question = checkbox.parentElement.textContent.trim();
+            var likelihood = checkbox.parentNode.parentNode.parentNode.firstChild.textContent.trim();
+            var isChecked = checkbox.checked ? 'Yes' : 'No';
+            var row = tbody.insertRow();
+
+            row.insertCell(0).textContent = question;
+            row.insertCell(1).textContent = likelihood;
+            row.insertCell(2).textContent = isChecked;
+        });
+
+        // Display the total risk percentage
+        var totalRow = tbody.insertRow();
+        totalRow.insertCell(0).textContent = 'Total Risk';
+        totalRow.insertCell(1).textContent = risk + '%';
+        totalRow.insertCell(2).textContent = ''; // Empty cell for consistency
+
+        // Populate the Threat Quantification column based on the calculated risk
+        populateThreatQuantificationColumn(totalRow, risk);
+
+        // Clear existing tbody and append the new one
+        table.removeChild(table.querySelector('tbody'));
+        table.appendChild(tbody);
+
+        // Show the result section
+        document.getElementById('formSection').classList.add('hidden');
+        document.getElementById('resultSection').classList.remove('hidden');
+    }
+
+    function populateThreatQuantificationColumn(totalRow, risk) {
+        var quantificationCell = totalRow.insertCell(3);
+
+        if (risk >= 80) {
+            quantificationCell.textContent = 'Very High';
+        } else if (risk >= 60) {
+            quantificationCell.textContent = 'High';
+        } else if (risk >= 40) {
+            quantificationCell.textContent = 'Medium';
+        } else if (risk >= 20) {
+            quantificationCell.textContent = 'Low';
+        } else {
+            quantificationCell.textContent = 'Very Low';
+        }
+    }
+</script>
+</body>
+
+</html>
